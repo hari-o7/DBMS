@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+<body>
+  <!-- Container to center the form vertically and horizontally -->
+  <div class="container">
+    <!-- Box to wrap all the contents of the form -->
+    <div class="form-box">
+      <!-- Container for the form elements -->
+      <div class="form-container">
+        <h2 class="form-name">Form</h2>
+        <!-- Form starts -->
+        <form>
+          <!-- Label and Text Input for the Name field -->
+          <div class="form-row">
+            <!-- <label for="name">Full Name</label> -->
+            <input type="text" id="name" name="name" required placeholder="Full Name" /><br />
+          </div>
+          <div class="form-row">
+            <!-- <label for="rollNo">Roll Number</label> -->
+            <input type="text" id="rollNo" name="rollNo" required  placeholder="Roll Number"/><br />
+          </div>
+          <div class="form-row">
+            <!-- <label for="clz">College Name</label> -->
+            <input type="text" id="clz" name="clz" required placeholder="College Name"/><br />
+          </div>
+          <!-- Container for the submit button -->
+          <div class="submit-container">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+        <!-- Form ends -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

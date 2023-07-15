@@ -1,0 +1,75 @@
+/* CSS Styles for the Simple Form */
+
+/* Styling for the container that centers the form vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(36, 38, 34, 0.534);
+}
+
+/* Add this style for the form name */
+.form-name {
+  text-align: center;
+  padding-left: 70px;
+}
+
+/* Styling for the form box with light gray background color and padding */
+.form-box {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Styling for the container that holds the form elements in a column and aligns them to the left */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Styling for the labels, making them block elements with fixed width and right alignment */
+label {
+  display: block;
+  width: 100px;
+  text-align: justify;
+  margin-top: 10px;
+  padding: 2px;
+}
+
+/* Styling for the text input fields with fixed width and padding */
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  /* background-color: #444;  */
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white; /* Add a bottom border */
+  background-color: transparent;
+}
+
+/* Styling for the container of the submit button, centering it horizontally and adding top margin */
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: inherit;
+}
+
+/* Styling for the submit button with fixed width */
+.submit-container input[type="submit"] {
+  background-color: #333;
+  color: white;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+}
+
+/* Styling for the placeholder text */
+input::placeholder {
+  opacity: 0.5; /* Decrease the opacity to 50% */
+}
