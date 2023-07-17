@@ -1,4 +1,3 @@
-// Assuming you have a form with the id "myForm"
 const form = document.getElementById("myForm");
 
 form.addEventListener("submit", (e) => {
@@ -17,11 +16,12 @@ form.addEventListener("submit", (e) => {
   };
 
   // Make an HTTP POST request to the backend endpoint
-  fetch("/submit-form", {
+  fetch("http://localhost:3000/submit-form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
+    mode: "cors", // Set the 'mode' option to 'cors'
     body: JSON.stringify(formData),
   })
     .then((response) => {
